@@ -1,0 +1,15 @@
+list=[1,2,3]
+way1:  list=[] //reinstializing
+way2:  list.clear()  //using clear method
+way3:  del list[:]    // using del
+way4:  list=list[:0]   // using slicing
+
+
+Reversing a list
+way1: list.reverse()
+way2: list=list[::-1]
+
+Copying a list
+way1: new_list=old_list[:]
+way2: new=old  // there is a issue inthis approach, if you modify new one then original list also  get modified, due to referencing.
+way3: new=old.copy()  // using copy method
